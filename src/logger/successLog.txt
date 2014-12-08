@@ -1,0 +1,155 @@
+
+ 2014-12-06 21:34:32.706 **********Ti1 add user -- create user u1 
+
+{ 1, 6121, 2014-12-06 21:34:42.331, Created User: ti1Tester1 [SUCCESS] }
+ 2014-12-06 21:34:42.545 **********Ti1 add user -- Attempt to create u1 again 
+
+ 2014-12-06 21:37:55.675 **********Ti2 add Item -- Attempt to create a copy to a non-existent title 
+
+ 2014-12-06 21:38:48.42 **********Ti2 add Item -- Attempt to create a copy to a non-existent title 
+
+{ 4, 6121, 2014-12-06 21:46:29.221, Title with ISBN: 1111111111 created by User: admin [SUCCESS1111111111:a] }
+ 2014-12-06 21:49:46.724 **********Ti3 Add Title --Create title t1 
+
+ 2014-12-06 21:50:10.748 **********Ti3 Add Title -- Attempt to create t1 again 
+
+ 2014-12-06 21:59:22.001 **********Ti3 Add Title --Create title t1 
+
+ 2014-12-06 22:01:36.813 **********Ti3 Add Title --Create title t1 
+
+ 2014-12-06 22:03:58.265 **********Ti3 Add Title --Create title t1 
+
+{ 4, 6121, 2014-12-06 22:05:32.957, Title with ISBN: 1122111112 created by User: admin [SUCCESS1122111112:Test Title] }
+ 2014-12-06 22:06:38.531 **********Ti3 Add Title --Create title t1 
+
+{ 4, 6121, 2014-12-06 22:08:12.891, Title with ISBN: 1122111112 created by User: admin [SUCCESS1122111112:Test Title] }
+ 2014-12-06 22:08:17.013 **********Ti3 Add Title -- Attempt to create t1 again 
+
+ 2014-12-06 22:34:53.207 **********Ti4 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 22:35:01.677, Created User: ti4Tester1 [SUCCESS] }
+ 2014-12-06 22:35:01.834 **********Ti4 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 22:35:03.288, Created User: ti4Tester2 [SUCCESS] }
+ 2014-12-06 22:35:03.429 **********Ti4 Borrow --Create title t1 
+
+{ 4, 6121, 2014-12-06 22:35:17.162, Title with ISBN: 1122111124 created by User: admin [SUCCESS1122111124:Test Title 3] }
+ 2014-12-06 22:35:21.427 **********Ti4 Borrow --Create copy1 of t1 
+
+ 2014-12-06 22:37:17.623 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+ 2014-12-06 22:37:20.353 **********Ti4 Borrow --Have user u2 request copy1 of t1 
+
+ 2014-12-06 22:45:57.43 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+ 2014-12-06 22:46:05.684 **********Ti4 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6241, 2014-12-06 22:47:01.531, Loan created by User: ti4Tester2 [1122111124:edu.scs.carleton.comp.ls.book.Title@174c2a36 ] [SUCCESS] }
+{ 16, 6241, 2014-12-06 22:47:04.068, Loan created by User: ti4Tester2 [1122111124:edu.scs.carleton.comp.ls.book.Title@2e9e0afd ] [SUCCESS] }
+ 2014-12-06 22:48:54.277 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+{ 16, 6240, 2014-12-06 22:49:02.327, Loan created by User: ti4Tester1 [1122111124:edu.scs.carleton.comp.ls.book.Title@7e0d1901 ] [SUCCESS] }
+ 2014-12-06 22:49:02.477 **********Ti4 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6241, 2014-12-06 22:49:03.527, Loan created by User: ti4Tester2 [1122111124:edu.scs.carleton.comp.ls.book.Title@6baf6f15 ] [SUCCESS] }
+ 2014-12-06 22:57:27.916 **********Ti5 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 22:57:36.276, Created User: ti5Tester1 [SUCCESS] }
+ 2014-12-06 22:57:36.437 **********Ti5 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 22:57:37.734, Created User: ti5Tester2 [SUCCESS] }
+ 2014-12-06 22:57:37.855 **********Ti5 Borrow --Create title t1 
+
+ 2014-12-06 22:59:08.77 **********Ti5 Borrow --Create copy1 of t1 
+
+ 2014-12-06 22:59:44.904 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+ 2014-12-06 22:59:45.943 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 22:59:46.981 **********Ti5 Borrow --Have user u2 request copy1 of t1 
+
+ 2014-12-06 23:00:38.057 **********Ti5 Borrow --Create users u1, u2 
+
+ 2014-12-06 23:00:46.515 **********Ti5 Borrow --Create users u1, u2 
+
+ 2014-12-06 23:00:48.006 **********Ti5 Borrow --Create title t1 
+
+{ 4, 6121, 2014-12-06 23:00:59.587, Title with ISBN: 1122111125 created by User: admin [SUCCESS1122111125:Test Title 4] }
+ 2014-12-06 23:01:06.371 **********Ti5 Borrow --Create copy1 of t1 
+
+ 2014-12-06 23:01:31.776 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+{ 16, 6242, 2014-12-06 23:01:34.537, Loan created by User: ti5Tester1 [1122111125:edu.scs.carleton.comp.ls.book.Title@2cedf5e1 ] [SUCCESS] }
+ 2014-12-06 23:01:34.691 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:01:35.363 **********Ti5 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6243, 2014-12-06 23:01:36.339, Loan created by User: ti5Tester2 [1122111125:edu.scs.carleton.comp.ls.book.Title@6abcaabc ] [SUCCESS] }
+ 2014-12-06 23:04:30.819 **********Ti4 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 23:04:39.273, Created User: ti4Tester1 [SUCCESS] }
+ 2014-12-06 23:04:39.438 **********Ti4 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 23:04:40.734, Created User: ti4Tester2 [SUCCESS] }
+ 2014-12-06 23:04:40.889 **********Ti4 Borrow --Create title t1 
+
+{ 4, 6121, 2014-12-06 23:04:52.47, Title with ISBN: 1122111124 created by User: admin [SUCCESS1122111124:Test Title 3] }
+ 2014-12-06 23:04:56.617 **********Ti4 Borrow --Create copy1 of t1 
+
+ 2014-12-06 23:05:21.286 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+{ 16, 6240, 2014-12-06 23:05:24.401, Loan created by User: ti4Tester1 [1122111124:edu.scs.carleton.comp.ls.book.Title@4906d65b ] [SUCCESS] }
+ 2014-12-06 23:05:24.556 **********Ti4 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6241, 2014-12-06 23:05:25.585, Loan created by User: ti4Tester2 [1122111124:edu.scs.carleton.comp.ls.book.Title@48df8221 ] [SUCCESS] }
+ 2014-12-06 23:07:20.765 **********Ti5 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 23:07:29.468, Created User: ti5Tester1 [SUCCESS] }
+ 2014-12-06 23:07:29.63 **********Ti5 Borrow --Create users u1, u2 
+
+{ 1, 6121, 2014-12-06 23:07:31.052, Created User: ti5Tester2 [SUCCESS] }
+ 2014-12-06 23:07:31.208 **********Ti5 Borrow --Create title t1 
+
+{ 4, 6121, 2014-12-06 23:07:42.672, Title with ISBN: 1122111125 created by User: admin [SUCCESS1122111125:Test Title 4] }
+ 2014-12-06 23:07:46.57 **********Ti5 Borrow --Create copy1 of t1 
+
+ 2014-12-06 23:08:11.026 **********Ti4 Borrow --Have user u1 borrow copy1 of t1 
+
+{ 16, 6242, 2014-12-06 23:08:14.207, Loan created by User: ti5Tester1 [1122111125:edu.scs.carleton.comp.ls.book.Title@2d1e77a8 ] [SUCCESS] }
+ 2014-12-06 23:08:14.37 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:08:15.011 **********Ti5 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6243, 2014-12-06 23:08:16.094, Loan created by User: ti5Tester2 [1122111125:edu.scs.carleton.comp.ls.book.Title@121c39fa ] [SUCCESS] }
+{ 16, 6242, 2014-12-06 23:08:52.374, Loan created by User: ti5Tester1 [1122111125:edu.scs.carleton.comp.ls.book.Title@7d7823e4 ] [SUCCESS] }
+ 2014-12-06 23:11:09.74 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:11:18.656 **********Ti5 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6243, 2014-12-06 23:11:19.698, Loan created by User: ti5Tester2 [1122111125:edu.scs.carleton.comp.ls.book.Title@4c43339c ] [SUCCESS] }
+ 2014-12-06 23:12:35.145 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:13:54.702 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:16:16.181 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:17:26.876 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:18:40.345 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:19:31.661 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:20:12.942 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:20:55.592 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:21:53.996 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:22:31.923 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+ 2014-12-06 23:22:55.461 **********Ti5 Borrow --Have user u1 renew copy1 of t1 within deadline 
+
+{ 19, 6242, 2014-12-06 23:23:04.049, Loan: 269 renewed by User: ti5Tester1 [SUCCESS] }
+ 2014-12-06 23:23:44.302 **********Ti5 Borrow --Have user u2 request copy1 of t1 
+
+{ 16, 6243, 2014-12-06 23:23:53.077, Loan created by User: ti5Tester2 [1122111125:edu.scs.carleton.comp.ls.book.Title@4f3c744 ] [SUCCESS] }
