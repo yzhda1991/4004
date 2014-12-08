@@ -17,41 +17,6 @@ public class UserStepDefine {
 	WebDriveController wdc = WebDriveController.getInstance();
 	WebDriver driver = wdc.getDriver();
 	WebElement searchResult = null;
-	
-
-	
-	@Given("^System log in as Librarian \"([^\"]*)\" \"([^\"]*)\"$")
-	public void System_log_in_as_Librarian(String arg1, String arg2) throws Throwable  {
-
-		if (!wdc.isLibrarianLogIn()) {
-			wdc.loginAsLibrarian(arg1, arg2);
-		}
-		if(!wdc.getCurrentUser().equals(arg1)){
-			wdc.logout();
-			wdc.loginAsLibrarian(arg1, arg2);
-		}
-		
-		Assert.assertTrue("system log in as Librarian",wdc.isLibrarianLogIn());
-
-	}
-
-	@When("^Librarian is on maintain user page$")
-	public void Librarian_clicked_on_Maintatin_User_button() throws Throwable {
-		
-			
-		if(wdc.isOnMaintainUserPage()) return;
-		
-		if(!wdc.isLibrarianLogIn()) Assert.fail("system log in as not a Librarian user");
-		
-		try{
-		driver.findElement(By.id("j_idt21:maintainMembers")).click();
-		}catch(org.openqa.selenium.NoSuchElementException ex){
-			System.out.println(ex.getMessage());
-		}
-		
-		
-		
-	}
 
 	@When("^Librarian input \"([^\"]*)\" , \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" on maintain user page$")
 	

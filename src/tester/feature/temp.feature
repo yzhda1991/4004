@@ -1,16 +1,12 @@
 Feature: temp
 
- 
-
-  Scenario Outline: remove user failS
+  Scenario Outline: create title fail
     Given System log in as Librarian "admin" "COMP5104"
-    When Librarian is on maintain user page
-    And Librarian input <UserName> at userName field in maintain user page
-    And Librarian clicked on search User button on maintain user page
-    Then System find available user info <UserName>
-    ##And Librarian clicked on delete user button on maintain user pages
-    And System promote fail message in user page contains "No"
+    When Librarian is on maintain title page
+    And Librarian input <ISBN>,<Title>,<Author>,<Publisher> on maintain title page
+    And Librarian clicked on create title button on maintain title page
+    Then System promote fail message in title page contains <ISBN>
 
     Examples: 
-      | familyName  | givenName     | MiddleInitial | EmailAddress                        | UserName   | Password  |
-      | "titesterA" | "LasttesterB" | ""            | "titestaerA_LasttesterB@tester.com" | "tempUser" | "a123456" |
+      | ISBN       | Title        | Author         | Publisher |
+      | 1122111112 | "Test Title" | "Fry, Stephen" | "Collins" |

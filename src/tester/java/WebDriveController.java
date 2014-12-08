@@ -103,10 +103,20 @@ public class WebDriveController {
 	}
 	
 	public boolean isOnMaintainTitlePage()throws org.openqa.selenium.NoSuchElementException{
-		return (driver.findElement(By.id(_MAINTAINTITLE_PAGE_IDENTIFIER))!=null);
+		
+		try{
+			return (driver.findElement(By.id(_MAINTAINTITLE_PAGE_IDENTIFIER))!=null);
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+			return false;
+		}
 	}
 	public boolean isOnLibrarianPage()throws org.openqa.selenium.NoSuchElementException{
-		return (driver.findElement(By.id(_LIBRARIAN_PAGE_IDENTIFIER))!=null);
+		try{
+			return (driver.findElement(By.id(_LIBRARIAN_PAGE_IDENTIFIER))!=null);
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+			return false;
+		}
+		
 	}
 	public boolean isOnMaintainUserPage(){
 		try{
@@ -117,10 +127,20 @@ public class WebDriveController {
 		
 	}
 	public boolean isOnLibrarySystemPage(){
-		return (driver.findElement(By.id(_LOANPAGE_PAGE_IDENTIFIER))!=null);
+		try{
+			return (driver.findElement(By.id(_LOANPAGE_PAGE_IDENTIFIER))!=null);
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+			return false;
+		}
+		
 	}
 	public boolean isOnMaintainItem(){
-		return (driver.findElement(By.id(_MAINTAINITEM_PAGE_IDENTIFIER))!=null);
+		try{
+			return (driver.findElement(By.id(_MAINTAINITEM_PAGE_IDENTIFIER))!=null);
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+			return false;
+		}
+		
 	}
 	
 }

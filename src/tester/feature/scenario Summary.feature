@@ -47,3 +47,25 @@ Feature: scenario Definition
     Examples: 
       | familyName  | givenName     | MiddleInitial | EmailAddress                        | UserName   | Password  |
       | "titesterA" | "LasttesterB" | ""            | "titestaerA_LasttesterB@tester.com" | "tempUser" | "a123456" |
+
+  Scenario Outline: create title successS
+    Given System log in as Librarian "admin" "COMP5104"
+    When Librarian is on maintain title page
+    And Librarian input <ISBN>,<Title>,<Author>,<Publisher> on maintain title page
+    And Librarian clicked on create title button on maintain title page
+    Then System promote success message in title page contains <ISBN>
+
+    Examples: 
+      | ISBN       | Title        | Author         | Publisher |
+      | 1122111112 | "Test Title" | "Fry, Stephen" | "Collins" |
+
+  Scenario Outline: create title fail
+    Given System log in as Librarian "admin" "COMP5104"
+    When Librarian is on maintain title page
+    And Librarian input <ISBN>,<Title>,<Author>,<Publisher> on maintain title page
+    And Librarian clicked on create title button on maintain title page
+    Then System promote fail message in title page contains <ISBN>
+
+    Examples: 
+      | ISBN       | Title        | Author         | Publisher |
+      | 1122111112 | "Test Title" | "Fry, Stephen" | "Collins" |
